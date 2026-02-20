@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    margin:0 auto 20px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+
+h1{
+    font-size:40px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.description{
+    color:#6c757d;
+    font-size:16px;
+    margin-bottom:40px;
+    line-height:1.6;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+    width:100%;
+    max-width:400px; /* evita que se haga gigante */
+}
+
+input{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    margin-bottom:20px;
+    font-size:14px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#4f8cff;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#4f8cff,#3b5bdb);
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(79,140,255,0.4);
+}
+
+.small-text{
+    margin-top:15px;
+    font-size:12px;
+    color:#888;
+    text-align: center;
+}
+
+.content{
+    max-width: 500px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    h1{
+        font-size:32px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+    .description{
+        font-size:14px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    input, button{
+        padding:12px;
+        font-size:14px;
+    }
+}
